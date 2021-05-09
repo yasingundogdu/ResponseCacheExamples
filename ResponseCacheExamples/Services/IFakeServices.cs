@@ -8,6 +8,6 @@ namespace ResponseCacheExamples.Services
 {
     public interface IFakeServices
     {
-        List<BookModel> GetBookList();
+        BookListViewModel GetBookList();
     }
 }

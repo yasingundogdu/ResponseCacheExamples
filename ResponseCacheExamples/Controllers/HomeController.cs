@@ -35,12 +35,7 @@ namespace ResponseCacheExamples.Controllers
         [ResponseCache(Duration = 36000, Location = ResponseCacheLocation.Any, NoStore = false)]
         public IActionResult BookList()
         {
-            BookListViewModel bookListViewModel = new BookListViewModel()
-            {
-                BookList = _fakeServices.GetBookList()
-            };
-
-            return View(bookListViewModel);
+            return View(_fakeServices.GetBookList());
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -8,39 +8,42 @@ namespace ResponseCacheExamples.Services
 {
     public class FakeServices : IFakeServices
     {
-        public List<BookModel> GetBookList()
+        public BookListViewModel GetBookList()
         {
-            return new List<BookModel>()
+            return new BookListViewModel()
             {
-                new BookModel()
+                BookList = new List<BookModel>()
                 {
-                    ID = 1,
-                    Title = "Şeker Portakalı",
-                    Writer = "José Mauro de Vasconcelos"
-                },
-                new BookModel()
-                {
-                    ID = 2,
-                    Title = "Yabancı",
-                    Writer = "Albert Camus"
-                },
-                new BookModel()
-                {
-                    ID = 3,
-                    Title = "Fareler ve İnsanlar",
-                    Writer = "John Steinbeck"
-                },
-                new BookModel()
-                {
-                    ID = 4,
-                    Title = "1984",
-                    Writer = "George Orwell"
-                },
-                new BookModel()
-                {
-                    ID = 42,
-                    Title = "Otostopçunun Galaksi Rehberi",
-                    Writer = "Douglas Adams"
+                    new BookModel()
+                    {
+                        ID = 1,
+                        Title = "Şeker Portakalı",
+                        Writer = "José Mauro de Vasconcelos"
+                    },
+                    new BookModel()
+                    {
+                        ID = 2,
+                        Title = "Yabancı",
+                        Writer = "Albert Camus"
+                    },
+                    new BookModel()
+                    {
+                        ID = 3,
+                        Title = "Fareler ve İnsanlar",
+                        Writer = "John Steinbeck"
+                    },
+                    new BookModel()
+                    {
+                        ID = 4,
+                        Title = "1984",
+                        Writer = "George Orwell"
+                    },
+                    new BookModel()
+                    {
+                        ID = 42,
+                        Title = "Otostopçunun Galaksi Rehberi",
+                        Writer = "Douglas Adams"
+                    }
                 }
             };
         }
