@@ -1,7 +1,7 @@
 # ResponseCacheExamples
 ASP.NET Core Response Cache
 
-at the first request it enters the function and returns a response.
+At the first request it enters the function and returns a response.
 
 ![11](https://user-images.githubusercontent.com/6221685/117571980-8e7ed280-b0d9-11eb-9401-81c02d2d727b.png)
 
